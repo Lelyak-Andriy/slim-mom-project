@@ -1,5 +1,6 @@
 {
   "name": "react-project-slim-moms",
+  "homepage": "https://Lelyak-Andriy.github.io/slim-mom-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "bootstrap": "^5.0.0-beta1",
     "eslint": "^7.16.0",
     "formik": "^2.2.6",
+    "gh-pages": "^4.0.0",
     "moment": "^2.29.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

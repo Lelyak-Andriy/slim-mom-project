@@ -1,0 +1,53 @@
+.pageContainer {
+  padding: 40px 15px 0 15px;
+  margin: 0;
+}
+.logoHide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .pageContainer {
+    display: inline-block;
+    width: 100%;
+    height: 944px;
+    padding: 157px 0 0 87px;
+    position: relative;
+  }
+  .bgContainer {
+    background-image: url(../../assets/images/tablet/banana-tablet-x1-min.png),
+      url(../../assets/images/tablet/strawberry-tablet-x1-min.png),
+      url(../../assets/images/tablet/leaves-tablet-x1-min-login.png),
+      url(../../assets/images/tablet/greybcg-tablet-x1-min.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom 170px right -120px,
+      bottom 250px left 12px, bottom right;
+    background-size: auto, 450px, auto, auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .pageContainer {
+    width: 100%;
+    height: 701px;
+    padding: 95px 0 0 115px;
+  }
+  .bgContainer {
+    background-image: url(../../assets/images/desktop/banana-desktop-x1-min-login.png),
+      url(../../assets/images/desktop/leaves-desktop-x2-min-login.png),
+      url(../../assets/images/desktop/strawberry-desktop-x1-min-login.png),
+      url(../../assets/images/desktop/greybcg-desktop-login-x1.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom right 270px, top 193px right,
+      bottom right;
+    background-size: auto, 756px, auto, auto;
+  }
+  .headerHide {
+    display: none;
+  }
+  .logoHide {
+    display: inline-block;
+    padding-top: 117px;
+    padding-left: 148px;
+  }
+}

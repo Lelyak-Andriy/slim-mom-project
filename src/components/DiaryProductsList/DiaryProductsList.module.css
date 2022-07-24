@@ -1,0 +1,36 @@
+.list {
+  width: 287px;
+  height: 210px;
+  padding: 0;
+  overflow-y: scroll;
+  margin: 0;
+}
+
+.title {
+  width: 90%;
+  font-family: 'Gotham Pro';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .list {
+    width: 589px;
+    height: 240px;
+  }
+  .title {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .list {
+    width: 600px;
+    height: 239px;
+    padding-bottom: 0;
+  }
+  .title {
+    width: 70%;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,104 @@
+.logoTextSlim {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  display: none;
+}
+.logoTextMom {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  display: none;
+}
+.logoTextSlimAuth {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  margin-right: 1px;
+  height: 16px;
+  color: #212121;
+}
+.logoTextMomAuth {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  height: 15.41px;
+  color: #fc842d;
+}
+
+.logoContainer {
+  display: block;
+}
+
+.logoImage {
+  width: 46.67px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .logoImage {
+    width: 46.67px;
+    height: 44px;
+    margin-right: 10px;
+  }
+  .logoTextSlimAuth {
+    margin-right: 1px;
+    height: 16px;
+    color: #212121;
+  }
+  .logoTextMomAuth {
+    height: 15.41px;
+    color: #fc842d;
+  }
+  .logoTextSlim {
+    display: block;
+    margin-right: 1px;
+    height: 16px;
+    color: #212121;
+  }
+  .logoTextMom {
+    display: block;
+    height: 15.41px;
+    color: #fc842d;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .logoContainer {
+    display: flex;
+    position: relative;
+  }
+  .logoImage {
+    width: 70px;
+    height: 66px;
+    position: absolute;
+    right: 55px;
+    bottom: 5px;
+  }
+  .logoTextSlimAuth {
+    height: 16px;
+    color: #212121;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+  .logoTextMomAuth {
+    height: 15.41px;
+    color: #fc842d;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+  .logoTextSlim {
+    height: 16px;
+    color: #212121;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+  .logoTextMom {
+    height: 16px;
+    color: #fc842d;
+    margin-top: 0;
+    padding-top: 5px;
+  }
+}
+
+.logoContainer {
+  text-decoration: none;
+  display: flex;
+}

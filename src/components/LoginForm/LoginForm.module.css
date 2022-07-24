@@ -1,0 +1,148 @@
+.title {
+  font-family: 'Gotham Pro';
+  margin-bottom: 80px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  color: #fc842d;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-width: 290px;
+}
+
+.input {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:not(:placeholder-shown) ~ .name {
+  top: -30px;
+  font-size: 12px;
+}
+
+.inputPass {
+  composes: input;
+  margin-bottom: 60px;
+}
+
+.inputPass:not(:placeholder-shown) ~ .name {
+  top: -30px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.errorInput {
+  background-color: #e1161613;
+  border-bottom: 1px solid #e11616;
+}
+
+.label {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: -20px;
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.04em;
+  color: #9b9faa;
+  transition: 0.3s;
+}
+
+.buttonReg {
+  padding: 13px 0;
+  margin: 0 auto;
+  display: block;
+  width: 176px;
+  border: 2px solid #fc842d;
+  border-radius: 30px;
+  background-color: #fc842d;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Verdana;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.buttonEnter {
+  composes: buttonReg;
+  background-color: #ffffff;
+  color: #fc842d;
+  text-decoration: none;
+  margin: 20px auto;
+}
+
+.error {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  color: #e11616;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: start;
+    padding-top: 34px;
+  }
+
+  .form {
+    position: relative;
+    margin-bottom: 60px;
+    width: 239px;
+  }
+
+  .inputPass {
+    margin-bottom: 0;
+  }
+
+  .buttonReg {
+    position: absolute;
+    bottom: -104px;
+    left: 0;
+  }
+  .buttonEnter {
+    position: static;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    margin-bottom: 91px;
+    margin-top: 0;
+    padding-top: 118px;
+  }
+
+  .form {
+    margin-bottom: 60px;
+  }
+
+  .buttonReg {
+    bottom: -106px;
+  }
+}

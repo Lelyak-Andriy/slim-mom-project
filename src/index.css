@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  scrollbar-color: #264061 #f0f1f3;
+  scrollbar-width: 6px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f0f1f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #264061;
+}
+::-webkit-scrollbar-thumb:vertical {
+  height: 40px;
+}
+
+.container {
+  width: 320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.react-datepicker-wrapper {
+  position: relative;
+}
+.react-datepicker-wrapper::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 20px;
+  top: 0;
+  right: -17px;
+  background-image: url('./assets/images/calendar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 87px;
+    margin: 0 auto;
+  }
+  .react-datepicker-wrapper::after {
+    top: 12px;
+    right: -36px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 115px;
+    margin: 0;
+  }
+}
+/* Стили для body */
+
+.stopScroll {
+  overflow-y: hidden;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}

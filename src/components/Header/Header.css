@@ -1,0 +1,85 @@
+.navContainer {
+  display: flex;
+}
+.loginLink {
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #9b9faa;
+}
+
+.loginLink:hover,
+.loginLink:active {
+  color: black;
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    margin-top: 18px;
+  }
+  .vectorOfHeader {
+    visibility: hidden;
+  }
+  .bottomVectorOfHeader {
+    visibility: visible;
+    width: 100%;
+    height: 0px;
+    border: 2px solid #e0e0e0;
+    margin-top: 18px;
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 612px;
+    height: 44px;
+    margin-top: 18px;
+  }
+  .vectorOfHeader {
+    visibility: hidden;
+  }
+  .bottomVectorOfHeader {
+    visibility: visible;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #e0e0e0;
+    margin-top: 19px;
+    position: absolute;
+    left: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 360px;
+    height: 44px;
+    margin-left: 50px;
+    margin-right: 15px;
+    margin-top: 123px;
+  }
+  .vectorOfHeader {
+    width: 32px;
+    height: 0px;
+    border: 1px solid #e0e0e0;
+    transform: rotate(90deg);
+    visibility: visible;
+  }
+  .bottomVectorOfHeader {
+    visibility: none;
+  }
+}

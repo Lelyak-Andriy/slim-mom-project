@@ -1,0 +1,69 @@
+.notification {
+  position: absolute;
+  left: 15px;
+  top: 105px;
+  max-width: 200px;
+  min-height: 50px;
+  background-color: #8ff168;
+  text-align: center;
+  border-radius: 4px;
+  color: rgb(19, 17, 17);
+  font-weight: 500;
+  padding: 10px;
+}
+.errorNotification {
+  position: absolute;
+  left: 15px;
+  top: 105px;
+  max-width: 200px;
+  text-align: center;
+  background-color: #f15135;
+  border-radius: 4px;
+  color: rgb(19, 17, 17);
+  color: aliceblue;
+  font-weight: 500;
+  padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .notification {
+    left: 80px;
+    top: 120px;
+    max-width: 230px;
+  }
+  .errorNotification {
+    left: 80px;
+    top: 120px;
+    max-width: 230px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .notification {
+    left: 100px;
+    top: 200px;
+    max-width: 280px;
+  }
+  .errorNotification {
+    left: 100px;
+    top: 200px;
+    max-width: 280px;
+  }
+}
+.enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.enterActive {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms linear;
+}
+.exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.exitActive {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all 250ms linear;
+}

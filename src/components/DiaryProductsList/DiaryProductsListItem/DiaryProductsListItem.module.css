@@ -1,0 +1,73 @@
+.listItem {
+  display: flex;
+  align-items: flex-end;
+  font-family: Verdana;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.22;
+}
+.listItem p {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+.listItemWeight {
+  margin-right: 10px;
+}
+.listItemCalorie {
+  margin-right: 10px;
+}
+.listItemName {
+  width: 138px;
+  margin-right: 10px;
+}
+.button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: auto 0;
+  color: #9b9faa;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 767px) {
+  .listItem span {
+    font-family: Verdana;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 1.22;
+  }
+}
+@media screen and (min-width: 768px) {
+  .listItem p {
+    margin-right: 30px;
+    padding-bottom: 20px;
+  }
+  .listItemName {
+    width: 240px;
+    text-align: left;
+  }
+  .listItemWeight {
+    width: 105px;
+    text-align: right;
+  }
+  .listItemCalorie {
+    width: 105px;
+    text-align: right;
+  }
+  .button {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .listItem p {
+    margin-right: 30px;
+  }
+  .button {
+    width: 12px;
+    height: 12px;
+  }
+}
